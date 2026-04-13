@@ -42,8 +42,7 @@ The CSV files must contain the following columns (specific column names can be a
    `gam_utils.py`
    This module provides a set of standalone functions for fitting Generalised Additive Models (GAMs), locating the points where partial dependence curves intersect the line y=0 (threshold points), merging thresholds that are too close together, and calculating confidence intervals for threshold points using the bootstrap method.
 This module can be used independently and does not require GeoShapley. Simply import and call it in your script:
-
-from gam_utils import fit_gam, find_thresholds, bootstrap_gam_thresholds, compute_gam_r2_pvalue
+  `from gam_utils import fit_gam, find_thresholds, bootstrap_gam_thresholds, compute_gam_r2_pvalue`
 
 ## Configuration Modifications
 
