@@ -14,7 +14,7 @@ This repository contains code for multi-model evaluation based on spatial cluste
 
 ## Data Preparation
 
-Place the CSV files for each year in the `data/` directory, using the naming convention `2002GWRF.csv`, `2009GWRF.csv`, etc.  
+Place the CSV files for each year in the `data/` directory, using the naming convention `2002CE_ML.csv`, `2009CE_ML.csv`, etc.  
 The CSV files must contain the following columns (specific column names can be adjusted in `config.py`):
 - Feature columns: `RD, PD, LPI, contag, pre, pop, NDVI, HAI, GDP, DEM, srad`
 - Target column: `LCE` or `LCS`
