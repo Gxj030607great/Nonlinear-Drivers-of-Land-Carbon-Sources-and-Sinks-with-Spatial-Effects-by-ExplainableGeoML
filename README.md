@@ -38,6 +38,13 @@ The CSV files must contain the following columns (specific column names can be a
    `python shap_interaction.py`  
    Analyse SHAP interaction values for two specified variables, fit GAM curves grouped by a third variable, and calculate intersection points.
 
+4. **SHAP Interaction**
+   `gam_utils.py`
+   This module provides a set of standalone functions for fitting Generalised Additive Models (GAMs), locating the points where partial dependence curves intersect the line y=0 (threshold points), merging thresholds that are too close together, and calculating confidence intervals for threshold points using the bootstrap method.
+This module can be used independently and does not require GeoShapley. Simply import and call it in your script:
+
+from gam_utils import fit_gam, find_thresholds, bootstrap_gam_thresholds, compute_gam_r2_pvalue
+
 ## Configuration Modifications
 
 All adjustable parameters (year, features, model parameters, etc.) are defined in `config.py` or in the constants section at the top of each script. Modify them as required.
